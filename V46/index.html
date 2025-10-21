@@ -1,0 +1,38 @@
+<!-- CSS Animations -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+.container{
+    background-color: aquamarine;
+    height: 80vh;
+    width: 30vw;
+}
+.box{
+    width: 64px;
+    height: 65px;
+    background-color: rgb(0, 162, 255);
+    animation: myCSSAnimations;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+@keyframes myCSSAnimations {
+    from{
+        transform: translateX(1000px);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
