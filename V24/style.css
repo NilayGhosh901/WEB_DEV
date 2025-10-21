@@ -1,0 +1,12 @@
+/* CSS Shadows and Outlines */
+
+.box{
+    border: 2px solid black;
+    padding: 34px;
+    box-shadow: 5px 15px 5px #888;
+}
+.text-element{
+    text-shadow: 2px 3px 4px #c20000;
+    outline: 20px;
+    border: 20px #c20000;
+}

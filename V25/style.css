@@ -1,0 +1,10 @@
+/* Styling Lists using CSS */
+
+nav ul li{
+    list-style: lower-roman;
+    list-style-type:"🤣";
+    background-color: yellow;
+    list-style-position: inside;
+    border: 2px solid black;
+    /* list-style-image: url(""); */
+}
