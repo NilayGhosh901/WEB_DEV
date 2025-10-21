@@ -1,0 +1,116 @@
+<!-- Create a website which shows videos of different category and audios of different categories.
+    You can use YouTube videos in an iframe using YouTube's embedding feature -->
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f4f4f4;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .category {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .media-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎥🎵 Media Library</h1>
+
+    <!-- Video Category: Music -->
+    <div class="category">
+        <h2>🎶 Music Videos</h2>
+        <div class="media-container">
+            <!-- YouTube Video Embed -->
+            <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/kJQP7kiw5Fk" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Video Category: Education -->
+    <div class="category">
+        <h2>📚 Educational Videos</h2>
+        <div class="media-container">
+            <iframe src="https://www.youtube.com/embed/H14bBuluwB8" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/aircAruvnKk" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Audio Category: Podcasts -->
+    <div class="category">
+        <h2>🎙️ Podcasts</h2>
+        <div class="media-container">
+            <!-- Local or Hosted Audio -->
+            <div>
+                <p><b>Motivational Talk</b></p>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div>
+                <p><b>Tech Talk</b></p>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Category: Music -->
+    <div class="category">
+        <h2>🎧 Audio Music</h2>
+        <div class="media-container">
+            <div>
+                <p><b>Relaxing Music</b></p>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div>
+                <p><b>Instrumental</b></p>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

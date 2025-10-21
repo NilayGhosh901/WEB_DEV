@@ -1,0 +1,14 @@
+ /* Styling the form so each label + input is on its own line */
+        form {
+            display: flex;
+            flex-direction: column; /* Puts elements vertically */
+            width: 200px; /* Optional: make form narrower */
+        }
+
+        label {
+            margin-top: 10px; /* Adds space above each label */
+        }
+
+        button {
+            margin-top: 15px; /* Space before submit button */
+        }
